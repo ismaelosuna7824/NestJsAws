@@ -5,18 +5,16 @@ phases:
     runtime-versions:
       nodejs: 22
     commands: 
-      - echo "Instalando pnpm"
-      - npm install -g pnpm
       - echo "Instalar cli nestjs"
       - npm install -g @nestjs/cli
   build: 
     commands:
       - echo "Instalando dependencias la aplicacion"
-      - pnpm install
+      - npm install
       - echo "Validar pruebas unitarias"
-      - pnpm run test
+      - npm run test
       - echo "Construyendo el build"
-      - pnpm run build
+      - npm run build
   post_build:
     commands:
       - echo "Empaquetando nuestra aplicacion"
