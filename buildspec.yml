@@ -20,8 +20,7 @@ phases:
   post_build:
     commands:
       - echo "Empaquetando nuestra aplicacion"
-      - mkdir -p deploy
-      - zip -r deploy/app.zip . -x "node_modules/*"
 
 artifacts:
-  files: deploy/app.zip
+  files: 
+    - '**/*'
