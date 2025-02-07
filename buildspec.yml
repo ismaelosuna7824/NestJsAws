@@ -19,7 +19,8 @@ phases:
       - pnpm run build
   post_build:
     commands:
-      - echo ""
+      - echo "Empaquetando nuestra aplicacion"
+      - mkdir -p deploy
       - zip -r deploy/app.zip . -x "node_modules/*"
 
 artifacts:
