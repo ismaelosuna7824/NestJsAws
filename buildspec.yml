@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 22
+    commands:
+      - echo "install cli nest"
+      - npm install -g @nestjs/cli
+  build:
+    commands:
+      - echo "Instalando dependencias de la aplicacion"
+      - npm install
+      - echo "validar test"
+      - npm run test"
+      - echo "contruyendo build"
+      - npm run build
+
+artifacts:
+  files:
+    - '**/*'
