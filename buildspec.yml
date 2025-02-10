@@ -11,7 +11,7 @@ phases:
     commands:
       - echo "Instalando dependencias de la aplicacion"
       - npm install
-      - echo "validar test"
+      - echo "validar test
       - npm run test"
       - echo "contruyendo build"
       - npm run build
